@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deep.UploadAPI", "Deep.UploadAPI\Deep.UploadAPI.csproj", "{C8A4745A-0178-41B6-A22A-ABA65E296E27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deep.UploadAPI.Test", "Deep.UploadAPI.Test\Deep.UploadAPI.Test.csproj", "{FEB65B49-3243-47B4-A2D6-A7C49A186679}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8A4745A-0178-41B6-A22A-ABA65E296E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A4745A-0178-41B6-A22A-ABA65E296E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A4745A-0178-41B6-A22A-ABA65E296E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A4745A-0178-41B6-A22A-ABA65E296E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB65B49-3243-47B4-A2D6-A7C49A186679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB65B49-3243-47B4-A2D6-A7C49A186679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB65B49-3243-47B4-A2D6-A7C49A186679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB65B49-3243-47B4-A2D6-A7C49A186679}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9776FD1-37F4-4EA6-A90E-1C124A5FF10C}
+	EndGlobalSection
+EndGlobal

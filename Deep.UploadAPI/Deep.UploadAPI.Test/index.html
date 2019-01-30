@@ -1,0 +1,46 @@
+﻿
+
+<!doctype html>
+<html>
+<head>
+    <title>图片上传接口测试</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<input type="file" name="uploadify" id="uploadify" onchange="uploadImage()" />
+<div id="result"></div>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function uploadImage() {
+        const $uploadify = $("#uploadify");
+        const file =$uploadify[0];
+        const formData = new FormData();
+        formData.append("Filedata", file.files[0]);//上传文件
+        //formData.append("folder","banner");			//自定义上传文件夹        
+        $.ajax({
+            type: 'POST',
+            url: "http://localhost:37065/image",//请求的 URL + 配置的接口
+            data: formData,
+            dataType: 'json',
+            contentType: false,
+            processData: false,
+            beforeSend: function () {
+               
+            },
+            success: function (e) {
+                if (e.ok) {
+                    $("#result").text("上传结果："+ e.filename);
+                    $uploadify.wrap("<form></form");
+                    $uploadify.parent()[0].reset();
+                    $uploadify.unwrap();
+                } else {
+                    alert(e.message);
+                }
+            }
+        });
+
+    }
+</script>
+</body>
+</html>
+

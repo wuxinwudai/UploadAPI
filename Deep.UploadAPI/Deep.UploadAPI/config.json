@@ -1,0 +1,1 @@
+{"white_list":["127.0.0.1","localhost"],"items":[{"type":"image","allow_types":"*.jpeg|*.jpg|*.png|*.gif","max_length":102400,"base_dir":"/uploads/images","year_dir":true,"month_dir":true,"day_dir":true},{"type":"video","allow_types":"*.mp4|*.avi","max_length":10485760,"base_dir":"uploads/video","year_dir":true,"month_dir":true,"day_dir":true}]}
